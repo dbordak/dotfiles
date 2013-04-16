@@ -185,10 +185,10 @@ exec --no-startup-id nitrogen --restore
 # Lockscreen keybind
 bindsym $mod+Shift+g exec i3lock -i /home/daniel/Pictures/Wallpaper/CelestialBodies.png
 
-# OSS volume keybindings
+# ALSA volume keybindings
 bindsym XF86AudioMute exec amixer -q set Master toggle
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+#bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+#bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 
 # MPD keybinds
 bindsym XF86AudioPlay exec mpc toggle
