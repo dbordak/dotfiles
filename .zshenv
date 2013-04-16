@@ -6,14 +6,6 @@
 #
 
 #
-# Browser
-#
-
-if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
-fi
-
-#
 # Editors
 #
 
@@ -42,8 +34,17 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /usr/local/{bin,sbin}
-  $path
+	/usr/local/{bin,sbin}
+	/usr/{bin,sbin}
+	/{bin,sbin}
+	/opt/android-sdk/platform-tools
+	/opt/java/bin
+	/opt/java/db/bin
+	/opt/java/jre/bin
+	/usr/bin/core_perl
+	/usr/lib/qt4/bin
+	/home/daniel/maple13/bin
+	$path
 )
 
 #
@@ -73,4 +74,4 @@ fi
 
 export PYTHONPATH=/usr/lib/python3.3/site-packages
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/android-sdk/platform-tools:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/core_perl:/usr/lib/qt4/bin:/home/daniel/maple13/bin
+#export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/android-sdk/platform-tools:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/core_perl:/usr/lib/qt4/bin:/home/daniel/maple13/bin
