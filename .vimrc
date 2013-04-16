@@ -74,7 +74,7 @@ set background=dark " When set to "dark", Vim will try to use colors that look
 set mouse=a         " Enable the use of the mouse.
 
 " Add go support to vim-tagbar
-so /home/daniel/.tagbar-go.vim
+so ~/.tagbar-go.vim
 
 " Shit I added
 
