@@ -1,0 +1,1 @@
+.agnostermod.zsh
