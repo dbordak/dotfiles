@@ -2,5 +2,5 @@
 
 This is my dotfiles repo. I'm really new at this so I doubt anyone wants these,
 they're really just here for my own benefit. This has my configuration files
-for i3wm, i3status vim and some associated plugins, urxvt (and potentially
+for i3wm, i3status, vim and some associated plugins, urxvt (and potentially
 other low-level X applications), zsh (using prezto), and X. 
