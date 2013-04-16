@@ -1,1 +1,1 @@
-.zshenv
+/home/daniel/.zprezto/runcoms/zshenv
