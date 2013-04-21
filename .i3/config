@@ -37,7 +37,7 @@ bindsym $mod+d exec dmenu_run -fn "Inconsolata-14:normal" -nf "#839496" -nb "#00
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # start uzbl
-bindsym $mod+b exec GTK2_RC_FILES=/usr/share/themes/FlatStudio/gtk-2.0/gtkrc uzbl-browser
+bindsym $mod+b exec GTK2_RC_FILES=/usr/share/themes/FlatStudio/gtk-2.0/gtkrc dwb
 
 # set workspaces for multi-monitor
 workspace "1: audio" output LVDS1

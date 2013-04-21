@@ -26,3 +26,4 @@ export JAVA_FONTS=/usr/share/fonts/TTF
 
 # Line below taken from oh-my-zsh
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
+alias boggle="sudo aura"
