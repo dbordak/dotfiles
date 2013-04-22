@@ -25,7 +25,7 @@ URxvt.geometry:             90x30
 ! Real Transparency
 URxvt.background: [00]#002b36
 
-URxvt.fading:               0
+URxvt.fading:               20
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
