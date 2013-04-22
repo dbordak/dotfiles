@@ -19,19 +19,19 @@ URxvt*depth:                32
 URxvt.geometry:             90x30
 
 ! Fake Transparency
-URxvt.transparent:          true
-*background: #002b36
+URxvt.transparent:			true
+*background:				#002b36
 
 ! Real Transparency
-!URxvt.background: [00]#002b36
+!URxvt.background:			[00]#002b36
 
-URxvt.fading:               20
-! URxvt.urgentOnBell:         true
-! URxvt.visualBell:           true
-URxvt.loginShell:           true
-URxvt.saveLines:            1000
-URxvt.internalBorder:       3
-URxvt.lineSpace:            0
+URxvt.fading:				30
+!URxvt.urgentOnBell:		true
+!URxvt.visualBell:			true
+URxvt.loginShell:			true
+URxvt.saveLines:			1000
+URxvt.internalBorder:		3
+URxvt.lineSpace:			0
 
 
 ! Fonts
