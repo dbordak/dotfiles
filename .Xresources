@@ -15,9 +15,16 @@ Xft.hintstyle:              hintfull
 ! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 !-------------------------------------------------------------------------------
  
-URxvt.depth:                32
+URxvt*depth:                32
 URxvt.geometry:             90x30
-URxvt.transparent:          true
+
+! Fake Transparency
+!URxvt.transparent:          true
+!*background: #002b36
+
+! Real Transparency
+URxvt.background: [00]#002b36
+
 URxvt.fading:               0
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
@@ -83,7 +90,7 @@ URxvt*keysym.End: \033[4~
 
 !!Source http://github.com/altercation/solarized
  
-*background: #002b36
+
 *foreground: #657b83
 !!*fading: 40
 *fadeColor: #002b36
