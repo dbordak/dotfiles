@@ -1,29 +1,54 @@
-#
-# Executes commands at the start of an interactive session.
-#
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+# Path to your oh-my-zsh configuration.
+ZSH=/usr/share/oh-my-zsh/
 
-# Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+#ZSH_THEME="agnoster"
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Customize to your needs...
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
 
-# I know there's a proper way of setting the prompt theme but I don't know it.
-source .agnostermod.zsh
+# Comment this out to disable bi-weekly auto-update checks
+DISABLE_AUTO_UPDATE="true"
 
-bindkey -v
-bindkey "^[[1~" beginning-of-line
-bindkey "^[[4~" end-of-line
-export KEYTIMEOUT=1
+# Uncomment to change how often before auto-updates occur? (in days)
+# export UPDATE_ZSH_DAYS=13
 
-unsetopt nomatch
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd '
-export JAVA_FONTS=/usr/share/fonts/TTF
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
 
-# Line below taken from oh-my-zsh
-alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
-alias boggle="sudo aura"
+# Uncomment following line if you want to disable autosetting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment following line if you want to disable command autocorrection
+# DISABLE_CORRECTION="true"
+
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment following line if you want to disable marking untracked files under
+# VCS as dirty. This makes repository status check for large repositories much,
+# much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+source ~/.agnostermod.zsh
+
+export EDITOR='vim'
+export VISUAL='vim'
+export PAGER='less'
+
+export PYTHONPATH=/usr/lib/python3.3/site-packages
+
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/android-sdk/platform-tools:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/core_perl:/usr/lib/qt4/bin:/home/daniel/maple13/bin
