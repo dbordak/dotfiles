@@ -1,6 +1,6 @@
 systemd --user &
 exec xmodmap ~/.speedswapper &
 exec xrdb ~/.Xresources &
-compton -cCGf -o 0.38 -O 200 -I 200 -t 0.02 -l 0.02 -r 3.2 -D2 -m 0.88 --backend glx --vsync opengl --shadow-exclude 'g:a:URxvt' &
+compton -c --backend glx --vsync opengl &
 xset +fp /usr/share/fonts/local &
 exec i3

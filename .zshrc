@@ -10,6 +10,8 @@ ZSH=/usr/share/oh-my-zsh/
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias murderorphans="sudo pacman -Rs $(pacman -Qtdq)"
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
