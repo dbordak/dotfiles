@@ -75,5 +75,9 @@ fi
 
 export PYTHONPATH=/usr/lib/python3.3/site-packages
 
+export GOPATH=/home/daniel/.golang
+
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig/
+
 #export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/android-sdk/platform-tools:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/core_perl:/usr/lib/qt4/bin:/home/daniel/maple13/bin
 

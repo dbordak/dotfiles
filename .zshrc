@@ -26,4 +26,6 @@ export JAVA_FONTS=/usr/share/fonts/TTF
 
 # Line below taken from oh-my-zsh
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
+alias murderorphans="sudo pacman -Rs $(pacman -Qtdq)"
 alias boggle="pacaur -Syu"
+alias vidja="vblank_mode=0 primusrun schedtool -I -e"
