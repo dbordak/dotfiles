@@ -13,7 +13,7 @@ fi
 # Customize to your needs...
 
 # I know there's a proper way of setting the prompt theme but I don't know it.
-source .agnostermod.zsh
+source ~/.agnostermod.zsh
 
 bindkey -v
 bindkey "^[[1~" beginning-of-line
@@ -29,3 +29,4 @@ alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
 alias murderorphans="sudo pacman -Rs $(pacman -Qtdq)"
 alias boggle="pacaur -Syu"
 alias vidja="vblank_mode=0 primusrun schedtool -I -e"
+alias mictoggle="~/bin/toggle_alsa_mode"
