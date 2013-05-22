@@ -11,4 +11,5 @@ exec xmodmap ~/.speedswapper &
 exec xrdb ~/.Xresources &
 compton --backend glx --vsync opengl &
 xset +fp /usr/share/fonts/local &
+urxvtd -q -f -o &
 exec i3
