@@ -47,7 +47,7 @@ set autoindent      " Copy indent from current line when starting a new line
                     " (typing <CR> in Insert mode or when using the "o" or "O"
                     " command).
  
-set textwidth=79    " Maximum width of text that is being inserted. A longer
+"set textwidth=79    " Maximum width of text that is being inserted. A longer
                     " line will be broken after white space to get this width.
  
 set formatoptions=c,q,r,t " This is a sequence of letters which describes how
@@ -79,8 +79,6 @@ so ~/.tagbar-go.vim
 " Shit I added
 
 nmap <F8> :TagbarToggle<CR>
-set guifont=Inconsolata\ for\ powerline\ 15
-"set guifont=Meslo\ LG\ M\ DZ\ 14
 nmap <F7> :NERDTreeToggle<CR>
 set foldmethod=syntax
 set foldnestmax=10
@@ -91,12 +89,26 @@ set nofoldenable
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+set laststatus=2 " Always display the statusline in all windows
+set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
+let g:airline_powerline_fonts = 1
 
-
+if has("gui_running")
+	set guifont=Ubuntu\ Mono\ 12
+	set guioptions=aem
+else
+	set ttimeoutlen=10
+    augroup FastEscape
+        autocmd!
+        au InsertEnter * set timeoutlen=0
+        au InsertLeave * set timeoutlen=1000
+    augroup END
+endif
 
 filetype plugin indent on
 syntax enable
 
+
+colorscheme solarized
 let g:solarized_contrast = "normal"
 let g:solarized_termtrans = 1
-colorscheme solarized

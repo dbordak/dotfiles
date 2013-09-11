@@ -14,7 +14,7 @@ set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
 #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font -xos4-terminus-medium-r-normal-*-20-200-72-*-c-100-iso8859-1
+font -xos4-terminesspowerline-medium-r-normal--20-200-72-72-c-100-iso10646-1
 
 # The font above is very space-efficient, that is, it looks good, sharp and
 # clear in small sizes. However, if you need a lot of unicode glyphs or
@@ -41,7 +41,10 @@ bindsym $mod+d exec dmenu_run -fn "Terminus-14:normal" -nf "#839496" -nb "#002b3
 
 # start dwb
 #bindsym $mod+b exec GTK2_RC_FILES=/usr/share/themes/FlatStudio/gtk-2.0/gtkrc dwb
-bindsym $mod+b exec dwb
+#bindsym $mod+b exec dwb
+
+# start firefox
+bindsym $mod+b exec GTK2_RC_FILES=/usr/share/themes/FlatStudio/gtk-2.0/gtkrc firefox
 
 # set workspaces for multi-monitor
 workspace "1: audio" output LVDS1
@@ -203,6 +206,7 @@ bar {
     output HDMI1
     output LVDS1
     tray_output HDMI1
+    tray_output LVDS1
 	status_command i3status -c ~/.i3/i3status.conf 
 	#status_command /home/daniel/.i3/conky-i3bar
 	colors {

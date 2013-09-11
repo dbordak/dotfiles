@@ -23,6 +23,7 @@ export KEYTIMEOUT=1
 unsetopt nomatch
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd '
 export JAVA_FONTS=/usr/share/fonts/TTF
+export GOPATH=/home/daniel/.golang
 
 # Line below taken from oh-my-zsh
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
