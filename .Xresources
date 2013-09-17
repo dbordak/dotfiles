@@ -87,9 +87,19 @@ URxvt*boldItalicFont: 	xft:ubuntu mono derivative powerline:bold:italic:pixelsiz
 URxvt*letterSpace: 		-1
 */
 
+/*
 ! Bispoid
 URxvt*font:				-misc-bispoid-medium-r-normal--17-160-72-72-c-80-iso10646-1
 URxvt*boldFont:			-misc-bispoid-bold-r-normal--17-160-72-72-c-80-iso10646-1
+*/
+
+
+! Hermit
+URxvt*font:				xft:hermit for powerline:regular:pixelsize=16
+URxvt*boldFont:			xft:hermit for powerline:bold:pixelsize=16
+URxvt*italicFont:		xft:hermit for powerline:italic:pixelsize=16
+URxvt*boldItalicFont:	xft:hermit for powerline:bold:italic:pixelsize=16
+
 
 ! Scrollbar
 URxvt.scrollStyle:      rxvt
