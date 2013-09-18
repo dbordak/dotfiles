@@ -14,7 +14,7 @@ exec xrdb ~/.Xresources &
 #compton --backend glx --vsync opengl &
 xset +fp /usr/share/fonts/local &
 xset +fp /usr/share/fonts/misc &
-urxvtd -q -f -o &
+#urxvtd -q -f -o &
 sxhkd &
 xsetroot -cursor_name left_ptr &
 exec bspwm -s "$PANEL_FIFO" -p W
