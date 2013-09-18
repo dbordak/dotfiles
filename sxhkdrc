@@ -82,7 +82,7 @@ super + Return
     urxvtc
 
 super + space
-    dmenu_run -fn "Hermit-13:normal" -nf "#839496" -nb "#002b36" -sb "#073642" -sf "#93a1a1"
+    dmenu_run -fn "Essential PragmataPro-12:normal" -nf "#839496" -nb "#002b36" -sb "#073642" -sf "#93a1a1"
 
 # make sxhkd reload its configuration files:
 super + Escape

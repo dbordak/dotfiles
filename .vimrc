@@ -66,11 +66,6 @@ set formatoptions=c,q,r,t " This is a sequence of letters which describes how
 set ruler           " Show the line and column number of the cursor position,
                     " separated by a comma.
  
-set background=dark " When set to "dark", Vim will try to use colors that look
-                    " good on a dark background. When set to "light", Vim will
-                    " try to use colors that look good on a light background.
-                    " Any other value is illegal.
- 
 set mouse=a         " Enable the use of the mouse.
 
 " Add go support to vim-tagbar
@@ -94,7 +89,7 @@ set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusl
 let g:airline_powerline_fonts = 1
 
 if has("gui_running")
-	set guifont=Ubuntu\ Mono\ 12
+	set guifont=Essential\ PragmataPro\ 12
 	set guioptions=aem
 else
 	set ttimeoutlen=10
@@ -112,3 +107,4 @@ syntax enable
 colorscheme solarized
 let g:solarized_contrast = "normal"
 let g:solarized_termtrans = 1
+set background=dark
