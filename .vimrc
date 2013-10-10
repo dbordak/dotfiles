@@ -3,9 +3,9 @@
 
 " For multi-byte character support (CJK support, for example):
 "set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,gb18030,latin1
-       
+
 set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
- 
+
 set shiftwidth=4    " Number of spaces to use for each step of (auto)indent.
  
 "set expandtab       " Use the appropriate number of spaces to insert a <Tab>.
@@ -89,6 +89,9 @@ set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/afte
 set laststatus=2 " Always display the statusline in all windows
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 let g:airline_powerline_fonts = 1
+let g:gitgutter_realtime = 0 " Disable gitgutter interval-based auto-update.
+let g:gitgutter_eager = 0    " Disable gitgutter update on focus/enter/tab.
+
 
 if has("gui_running")
 	set guifont=Essential\ PragmataPro\ 12
