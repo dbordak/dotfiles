@@ -1,4 +1,3 @@
-#
 # Executes commands at the start of an interactive session.
 #
 # Authors:
@@ -6,14 +5,25 @@
 #
 
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
+#if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+#  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+#fi
 
-# Customize to your needs...
+autoload -Uz compinit promptinit colors
+colors
+compinit -i
+promptinit
+
+# Enables arrow-key driven menus (on double-tab)
+zstyle ':completion:*' menu select
+
+setopt EXTENDED_GLOB
+source ~/packages/prezto/modules/completion/init.zsh
+setopt completealiases
+setopt HIST_IGNORE_DUPS
 
 # I know there's a proper way of setting the prompt theme but I don't know it.
-source ~/.agnostermod.zsh
+source prompt_simple_powerline
 
 bindkey -v
 bindkey "^[[1~" beginning-of-line
@@ -25,9 +35,8 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd '
 export JAVA_FONTS=/usr/share/fonts/TTF
 export GOPATH=/home/daniel/.golang
 
-# Line below taken from oh-my-zsh
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
 alias murderorphans="sudo pacman -Rs $(pacman -Qtdq)"
 alias boggle="pacaur -Syu"
 alias vidja="vblank_mode=0 primusrun schedtool -I -e"
-alias mictoggle="~/bin/toggle_alsa_mode"
+#alias mictoggle="~/bin/toggle_alsa_mode"

@@ -5,12 +5,16 @@ FIRST_DESK_R=6
 LEFT_DESKS="$(seq 2 5)"
 RIGHT_DESKS="$(seq 7 9) 0"
 
-bspc desktop Desktop02 -n $FIRST_DESK_L
+bspc desktop ^2 -n $FIRST_DESK_L
 bspc monitor HDMI1 -a $LEFT_DESKS
-bspc desktop Desktop01 -n $FIRST_DESK_R
+bspc desktop ^1 -n $FIRST_DESK_R
 bspc monitor LVDS1 -a $RIGHT_DESKS
 
-bspc rule -a Gimp -d Eight --floating
+bspc rule -a Gimp -d ^8 --follow --floating
+bspc rule -a Chromium -d ^2
+bspc rule -a mplayer2 --floating
+bspc rule -a Kupfer.py --focus
+bspc rule -a Screenkey --unmanage
 
 bspc config split_ratio           0.52
 bspc config border_width          2
@@ -19,4 +23,5 @@ bspc config borderless_monocle    true
 bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 
-bspc monitor HDMI1 -p 18 0 0 0
+#Autoexec stuff
+nitrogen --restore

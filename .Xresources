@@ -30,7 +30,7 @@ URxvt.lineSpace:		-1
 
 ! Fonts
 
-Emacs.font:				Ubuntu Mono-12
+Emacs.font:				Essential PragmataPro-12
 URxvt.allow_bold:		true
 
 /*
