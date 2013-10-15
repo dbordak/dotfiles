@@ -5,9 +5,9 @@ FIRST_DESK_R=6
 LEFT_DESKS="$(seq 2 5)"
 RIGHT_DESKS="$(seq 7 9) 0"
 
-bspc desktop ^2 -n $FIRST_DESK_L
+bspc desktop ^1 -n $FIRST_DESK_L
 bspc monitor HDMI1 -a $LEFT_DESKS
-bspc desktop ^1 -n $FIRST_DESK_R
+bspc desktop ^2 -n $FIRST_DESK_R
 bspc monitor LVDS1 -a $RIGHT_DESKS
 
 bspc rule -a Gimp -d ^8 --follow --floating
