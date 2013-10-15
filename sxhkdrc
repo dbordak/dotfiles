@@ -81,6 +81,11 @@ super + Return
 super + space
     dmenu_run -fn "Essential PragmataPro-12:normal" -nf "#839496" -nb "#002b36" -sb "#073642" -sf "#93a1a1"
 
+# Controller binds
+
+F11
+	bspc window -t fullscreen
+
 # make sxhkd reload its configuration files:
 super + Escape
     pkill -USR1 -x sxhkd

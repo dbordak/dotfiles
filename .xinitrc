@@ -11,7 +11,8 @@ mkfifo "$PANEL_FIFO"
 DEFAULTSESSION=bspwm
 
 systemd --user &
-xrandr --output HDMI1 --left-of LVDS1 &
+xrandr --output HDMI1 --primary &
+xrandr --output LVDS1 --right-of HDMI1 &
 exec xrdb ~/.Xresources &
 #compton --backend glx --vsync opengl &
 #urxvtd -q -f -o &
