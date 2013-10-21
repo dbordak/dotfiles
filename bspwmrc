@@ -1,14 +1,10 @@
 #! /bin/sh
 
-FIRST_DESK_L=1
-FIRST_DESK_R=6
-LEFT_DESKS="$(seq 2 5)"
-RIGHT_DESKS="$(seq 7 9) 0"
+LEFT_DESKS="$(seq 1 5)"
+RIGHT_DESKS="$(seq 6 9) 0"
 
-bspc desktop ^1 -n $FIRST_DESK_L
-bspc monitor HDMI1 -a $LEFT_DESKS
-bspc desktop ^2 -n $FIRST_DESK_R
-bspc monitor LVDS1 -a $RIGHT_DESKS
+bspc monitor HDMI1 -d $LEFT_DESKS
+bspc monitor LVDS1 -d $RIGHT_DESKS
 
 bspc rule -a Gimp -d ^8 --follow --floating
 bspc rule -a Chromium -d ^2
