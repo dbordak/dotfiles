@@ -22,6 +22,5 @@ export GOPATH=/home/daniel/.golang
 export DEFAULT_USER=daniel
 
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
-alias boggle="pacaur -Syu"
 alias vidja="vblank_mode=0 primusrun schedtool -I -e"
-alias supdate="sudo pacman -Syu && meat -u && antigen update && vim +BundleInstall +qall"
+alias boggle="sudo pacman -Syu && meat -u && antigen update && vim +BundleInstall +qall"
