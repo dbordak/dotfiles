@@ -19,6 +19,7 @@ exec xrdb ~/.Xresources &
 sxhkd &
 xsetroot -cursor_name left_ptr &
 setxkbmap -option caps:shiftlock &
+rulc -l > /dev/null || ruld &
 case "$1" in
 	i3) exec i3 ;;
 	*) exec $DEFAULTSESSION -s "$PANEL_FIFO" -p W ;;
