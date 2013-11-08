@@ -33,77 +33,60 @@ URxvt.lineSpace:		-1
 Emacs.font:				Essential PragmataPro-12
 URxvt.allow_bold:		true
 
-/*
-! Terminus for Powerline
-URxvt*font: 			-xos4-terminesspowerline-medium-r-normal-*-18-*-72-72-c-100-iso10646-1
-URxvt*boldFont:			-xos4-terminesspowerline-bold-r-normal-*-18-*-72-72-c-100-iso10646-1
-URxvt*letterSpace: 		-1
-*/
+!! Terminus for Powerline
+!URxvt*font: 			-xos4-terminesspowerline-medium-r-normal-*-18-*-72-72-c-100-iso10646-1
+!URxvt*boldFont:			-xos4-terminesspowerline-bold-r-normal-*-18-*-72-72-c-100-iso10646-1
+!URxvt*letterSpace: 		-1
 
-/*
-! Tamsyn
-URxvt*font:				-misc-tamsyn-medium-r-normal--17-120-100-100-c-0-iso8859-1
-URxvt*boldFont:			-misc-tamsyn-bold-r-normal--17-120-100-100-c-0-iso8859-1
-*/
+!! Tamsyn
+!URxvt*font:				-misc-tamsyn-medium-r-normal--17-120-100-100-c-0-iso8859-1
+!URxvt*boldFont:			-misc-tamsyn-bold-r-normal--17-120-100-100-c-0-iso8859-1
 
-/*
-! EnvyPN
-URxvt*font:				-ypn-envypn-medium-*-normal--15-150-75-75-c-90-iso8859-1
-Xterm*font:				-ypn-envypn-medium-*-normal--15-150-75-75-c-90-iso8859-1
-*/
+!! EnvyPN
+!URxvt*font:				-ypn-envypn-medium-*-normal--15-150-75-75-c-90-iso8859-1
+!Xterm*font:				-ypn-envypn-medium-*-normal--15-150-75-75-c-90-iso8859-1
 
-/*
-! Envy Code R
-URxvt*font:				xft:envy code r for powerline:regular:pixelsize=16
-URxvt*italicFont:		xft:envy code r:italic:pixelsize=16
-URxvt*boldFont:			xft:envy code r:bold:pixelsize=16
-URxvt*boldItalicFont:	xft:envy code r:bold:italic:pixelsize=16
-*/
+!! Envy Code R
+!URxvt*font:				xft:envy code r for powerline:regular:pixelsize=16
+!URxvt*italicFont:		xft:envy code r:italic:pixelsize=16
+!URxvt*boldFont:			xft:envy code r:bold:pixelsize=16
+!URxvt*boldItalicFont:	xft:envy code r:bold:italic:pixelsize=16
 
-/*
-! Source Code Pro
-URxvt*font: 			xft:source code pro for powerline:regular:pixelsize=18antialias=false
-URxvt*imFont: 			xft:source code pro for powerline:regular:pixelsize=18:antialias=false
-URxvt*boldFont: 		xft:source code pro for powerline:semibold:pixelsize=18:antialias=false
-URxvt*italicFont: 		xft:source code pro for powerline:italic:pixelsize=18:antialias=false
-URxvt*boldItalicFont: 	xft:source code pro for powerline:semibold:italic:pixelsize=18:antialias=false
-URxvt*letterSpace: 		-2
-*/
+!! Source Code Pro
+!URxvt*font: 			xft:source code pro for powerline:regular:pixelsize=18antialias=false
+!URxvt*imFont: 			xft:source code pro for powerline:regular:pixelsize=18:antialias=false
+!URxvt*boldFont: 		xft:source code pro for powerline:semibold:pixelsize=18:antialias=false
+!URxvt*italicFont: 		xft:source code pro for powerline:italic:pixelsize=18:antialias=false
+!URxvt*boldItalicFont: 	xft:source code pro for powerline:semibold:italic:pixelsize=18:antialias=false
+!URxvt*letterSpace: 		-2
 
-/*
 ! Inconsolata
 URxvt*font: 			xft:inconsolata for powerline:regular:pixelsize=18
 URxvt*imFont: 			xft:inconsolata for powerline:regular:pixelsize=18
 URxvt*boldFont: 		xft:inconsolata:bold:pixelsize=18
 URxvt*letterSpace: 		-1*/
 
-/*
-! Ubuntu Mono
-URxvt*font:				xft:ubuntu mono derivative powerline:regular:pixelsize=16
-URxvt*imFont: 			xft:ubuntu mono derivative powerline:regular:pixelsize=16
-URxvt*boldFont: 		xft:ubuntu mono derivative powerline:bold:pixelsize=16
-URxvt*italicFont: 		xft:ubuntu mono derivative powerline:italic:pixelsize=16
-URxvt*boldItalicFont: 	xft:ubuntu mono derivative powerline:bold:italic:pixelsize=16
-URxvt*letterSpace: 		-1
-*/
+!! Ubuntu Mono
+!URxvt*font:				xft:ubuntu mono derivative powerline:regular:pixelsize=16
+!URxvt*imFont: 			xft:ubuntu mono derivative powerline:regular:pixelsize=16
+!URxvt*boldFont: 		xft:ubuntu mono derivative powerline:bold:pixelsize=16
+!URxvt*italicFont: 		xft:ubuntu mono derivative powerline:italic:pixelsize=16
+!URxvt*boldItalicFont: 	xft:ubuntu mono derivative powerline:bold:italic:pixelsize=16
+!URxvt*letterSpace: 		-1
 
-/*
-! Bispoid
-URxvt*font:				-misc-bispoid-medium-r-normal--17-160-72-72-c-80-iso10646-1
-URxvt*boldFont:			-misc-bispoid-bold-r-normal--17-160-72-72-c-80-iso10646-1
-*/
+!! Bispoid
+!URxvt*font:				-misc-bispoid-medium-r-normal--17-160-72-72-c-80-iso10646-1
+!URxvt*boldFont:			-misc-bispoid-bold-r-normal--17-160-72-72-c-80-iso10646-1
 
-/*
-! Hermit
-URxvt*font:				xft:hermit for powerline:regular:pixelsize=16
-URxvt*boldFont:			xft:hermit for powerline:bold:pixelsize=16
-URxvt*italicFont:		xft:hermit for powerline:italic:pixelsize=16
-URxvt*boldItalicFont:	xft:hermit for powerline:bold:italic:pixelsize=16
-*/
+!! Hermit
+!URxvt*font:				xft:hermit for powerline:regular:pixelsize=16
+!URxvt*boldFont:			xft:hermit for powerline:bold:pixelsize=16
+!URxvt*italicFont:		xft:hermit for powerline:italic:pixelsize=16
+!URxvt*boldItalicFont:	xft:hermit for powerline:bold:italic:pixelsize=16
 
-! PragmataPro
-URxvt*font:				xft:Essential PragmataPro:regular:pixelsize=16
-URxvt*letterSpace:		-1
+!! PragmataPro
+!URxvt*font:				xft:Essential PragmataPro:regular:pixelsize=16
+!URxvt*letterSpace:		-1
 
 ! Scrollbar
 URxvt.scrollStyle:      rxvt
