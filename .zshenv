@@ -1,13 +1,6 @@
 #
 # Defines environment variables.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
-
-#
-# Editors
-#
 
 export EDITOR='vim'
 export VISUAL='vim'
@@ -18,7 +11,7 @@ export PAGER='less'
 #
 
 if [[ -z "$LANG" ]]; then
-  export LANG='en_US.UTF-8'
+	export LANG='en_US.UTF-8'
 fi
 
 #
@@ -27,64 +20,33 @@ fi
 
 typeset -gU cdpath fpath mailpath path
 
-# Set the the list of directories that cd searches.
-# cdpath=(
-#   $cdpath
-# )
-
-# Set the list of directories that Zsh searches for programs.
 path=(
 	/usr/local/{bin,sbin}
 	/usr/{bin,sbin}
 	/{bin,sbin}
-	/opt/android-sdk/platform-tools
 	/opt/java/bin
 	/opt/java/db/bin
 	/opt/java/jre/bin
 	/usr/bin/core_perl
 	/usr/lib/qt4/bin
 	/home/daniel/maple13/bin
+	/home/daniel/scripts/panel
 	$path
 )
 
-#
-# Less
-#
-
-# Set the default Less options.
-# Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
-# Remove -X and -F (exit if the content fits on one screen) to enable it.
-export LESS='-F -g -i -M -R -S -w -X -z-4'
-
-# Set the Less input preprocessor.
-if (( $+commands[lesspipe.sh] )); then
-  export LESSOPEN='| /usr/bin/env lesspipe.sh %s 2>&-'
-fi
-
-#
-# Temporary Files
-#
-
-
-#if [[ -d "$TMPDIR" ]]; then
-#  export TMPPREFIX="${TMPDIR%/}/zsh"
-#  if [[ ! -d "$TMPPREFIX" ]]; then
-#    mkdir -p "$TMPPREFIX"
-#  fi
-#fi
-
-#export PYTHONPATH=/usr/lib/python3.3/site-packages
-
+export KEYTIMEOUT=1
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd '
+export JAVA_FONTS=/usr/share/fonts/TTF
+export DEFAULT_USER=daniel
 export GOPATH=/home/daniel/.golang
-
 export PKG_CONFIG_PATH=/usr/lib/pkgconfig/
-
-#export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/android-sdk/platform-tools:/opt/java/bin:/opt/java/db/bin:/opt/java/jre/bin:/usr/bin/core_perl:/usr/lib/qt4/bin:/home/daniel/maple13/bin
-
+export PANEL_FIFO=/tmp/panel-fifo
+export PANEL_HEIGHT=24
 
 export XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-"$HOME/.config"}
 export XDG_DATA_HOME=${XDG_DATA_HOME:-"$HOME/.local/share"}
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:-"$HOME/.cache"}
 
-export PANEL_FIFO=/tmp/panel-fifo
-export PANEL_HEIGHT=24
+alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
+alias vidja="vblank_mode=0 primusrun schedtool -I -e"
+alias boggle="sudo pacman -Syu && meat -u && antigen update && vim +BundleInstall +qall"

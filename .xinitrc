@@ -5,12 +5,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 	unset f
 fi
 
-[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
-mkfifo "$PANEL_FIFO"
-
-DEFAULTSESSION=bspwm
-
-systemd --user &
 xrandr --output HDMI1 --primary &
 xrandr --output LVDS1 --right-of HDMI1 &
 exec xrdb ~/.Xresources &
@@ -22,5 +16,5 @@ setxkbmap -option caps:shiftlock &
 rulc -l > /dev/null || ruld &
 case "$1" in
 	i3) exec i3 ;;
-	*) exec $DEFAULTSESSION -s "$PANEL_FIFO" -p W ;;
+	*) exec bspwm 2> ~/.bspwm.log ;;
 esac

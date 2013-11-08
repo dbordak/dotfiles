@@ -1,7 +1,7 @@
 #! /bin/sh
 
-bspc monitor HDMI1 -d I II III IV V
-bspc monitor LVDS1 -d VI VII VIII IX X
+bspc monitor HDMI1 -d 1 2 3 4 5
+bspc monitor LVDS1 -d 6 7 8 9 10
 
 bspc config border_width          2
 bspc config window_gap            12
@@ -15,7 +15,6 @@ bspc config rule_command "xwinfo -cints 0x%X | xargs -d '\n' rulc -t"
 rulc -a 'class=="Gimp"' 'desktop=^8 follow=on floating=on'
 rulc -a 'class=="Chromium"' 'desktop=^2'
 rulc -a 'instance=="mpv"' 'floating=on'
-rulc -a 'class=="Kupfer.py"' 'focus=on'
 rulc -a 'class=="Screenkey"' 'manage=off'
 
 nitrogen --restore
