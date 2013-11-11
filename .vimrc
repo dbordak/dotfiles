@@ -1,46 +1,66 @@
 set nocompatible
 
-set tabstop=4		" Number of spaces that a <Tab> in the file counts for.
-set shiftwidth=4	" Number of spaces to use for each step of (auto)indent.
-set showcmd			" Show (partial) command in status line.
-set number			" Show line numbers.
-set relativenumber	" Show line numbers in relation to current line.
-set showmatch	   " When a bracket is inserted, briefly jump to the matching
-					" one. The jump is only done if the match can be seen on the
-					" screen. The time to show the match can be set with
-					" 'matchtime'.
-set hlsearch		" When there is a previous search pattern, highlight all
-					" its matches.
-set incsearch	   " While typing a search command, show immediately where the
-					" so far typed pattern matches.
-set ignorecase	  " Ignore case in search patterns.
-set smartcase	   " Override the 'ignorecase' option if the search pattern
-					" contains upper case characters.
-set backspace=2	 " Influences the working of <BS>, <Del>, CTRL-W
-					" and CTRL-U in Insert mode. This is a list of items,
-					" separated by commas. Each item allows a way to backspace
-					" over something.
-set autoindent	  " Copy indent from current line when starting a new line
-					" (typing <CR> in Insert mode or when using the "o" or "O"
-					" command).
-set textwidth=79	" Maximum width of text that is being inserted. A longer
-					" line will be broken after white space to get this width.
-set formatoptions=c,q " This is a sequence of letters which describes how
-					" automatic formatting is to be done.
-					"
-					" letter	meaning when present in 'formatoptions'
-					" ------	---------------------------------------
-					" c		 Auto-wrap comments using textwidth, inserting
-					"		   the current comment leader automatically.
-					" q		 Allow formatting of comments with "gq".
-					" r		 Automatically insert the current comment leader
-					"		   after hitting <Enter> in Insert mode.
-					" t		 Auto-wrap text using textwidth (does not apply
-					"		   to comments)
-"set ruler			" Show the line and column number of the cursor position,
-					" separated by a comma. Not needed with {power,air}line.
-set mouse=a			" Enable the use of the mouse.
-set hidden			" Hides buffers rather than closing them.
+set tabstop=4      " Number of spaces that a <Tab> in the file counts for.
+set shiftwidth=4   " Number of spaces to use for each step of (auto)indent.
+set showcmd        " Show (partial) command in status line.
+set number         " Show line numbers.
+set relativenumber " Show line numbers in relation to current line.
+set mouse=a        " Enable the use of the mouse.
+set hidden         " Hides buffers rather than closing them.
+set title          " Show filename in window title.
+set cursorline     " Highlight current line.
+set ignorecase     " Ignore case in search patterns.
+
+" Override the 'ignorecase' option if the search pattern
+" contains upper case characters.
+set smartcase
+
+" When a bracket is inserted, briefly jump to the matching
+" one. The jump is only done if the match can be seen on the
+" screen. The time to show the match can be set with
+" 'matchtime'.
+set showmatch
+
+" When there is a previous search pattern, highlight all
+" its matches.
+set hlsearch
+
+" While typing a search command, show immediately where the
+" so far typed pattern matches.
+set incsearch
+
+" Influences the working of <BS>, <Del>, CTRL-W
+" and CTRL-U in Insert mode. This is a list of items,
+" separated by commas. Each item allows a way to backspace
+" over something.
+set backspace=2
+					
+" Copy indent from current line when starting a new line
+" (typing <CR> in Insert mode or when using the "o" or "O"
+" command).
+set autoindent
+
+" Maximum width of text that is being inserted. A longer
+" line will be broken after white space to get this width.
+set textwidth=79
+					
+" This is a sequence of letters which describes how
+" automatic formatting is to be done.
+"
+" letter	meaning when present in 'formatoptions'
+" ------	---------------------------------------
+" c		 Auto-wrap comments using textwidth, inserting
+"		   the current comment leader automatically.
+" q		 Allow formatting of comments with "gq".
+" r		 Automatically insert the current comment leader
+"		   after hitting <Enter> in Insert mode.
+" t		 Auto-wrap text using textwidth (does not apply
+"		   to comments)
+set formatoptions=c,q
+
+" Show the line and column number of the cursor position,
+" separated by a comma. Not needed with {power,air}line.
+"set ruler	
 
 filetype off
 
