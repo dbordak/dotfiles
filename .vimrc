@@ -9,6 +9,7 @@ set mouse=a        " Enable the use of the mouse.
 set hidden         " Hides buffers rather than closing them.
 set title          " Show filename in window title.
 set cursorline     " Highlight current line.
+set autoread       " Automaticallly reload buffers when the file is changed.
 set ignorecase     " Ignore case in search patterns.
 
 " Override the 'ignorecase' option if the search pattern
@@ -62,6 +63,23 @@ set formatoptions=c,q
 " separated by a comma. Not needed with {power,air}line.
 "set ruler	
 
+" Following section stolen from gregstallings/vimfiles
+" =============================================================================
+" Multipurpose Tab Key
+" =============================================================================
+
+" Indent if at the beginning of a line, else do completion
+function! InsertTabWrapper()
+  let col = col('.') - 1
+  if !col || getline('.')[col - 1] !~ '\k'
+    return "\<tab>"
+  else
+    return "\<c-p>"
+  endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
+
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
@@ -109,7 +127,8 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:gitgutter_realtime = 0 " Disable gitgutter interval-based auto-update.
 let g:gitgutter_eager = 0	" Disable gitgutter update on focus/enter/tab.
-
+let NERDTreeShowHidden=1
+let NERDTreeShowLineNumbers=1
 
 if has("gui_running")
 	set guifont=Essential\ PragmataPro\ 12
