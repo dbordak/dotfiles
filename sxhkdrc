@@ -81,7 +81,7 @@ super + @button{1-3}
 #
 
 super + Return
-	termite
+	urxvt
 
 super + space
 	dmenu_run -fn "Essential PragmataPro-12:normal" -nf "#839496" -nb "#002b36" -sb "#073642" -sf "#93a1a1"

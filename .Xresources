@@ -61,8 +61,8 @@ URxvt.allow_bold:		true
 !URxvt*letterSpace: 		-2
 
 ! Inconsolata
-URxvt*font: 			xft:inconsolata for powerline:regular:pixelsize=18
-URxvt*imFont: 			xft:inconsolata for powerline:regular:pixelsize=18
+URxvt*font: 			xft:inconsolata:regular:pixelsize=18
+URxvt*imFont: 			xft:inconsolata:regular:pixelsize=18
 URxvt*boldFont: 		xft:inconsolata:bold:pixelsize=18
 URxvt*letterSpace: 		-1*/
 
