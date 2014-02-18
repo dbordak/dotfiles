@@ -10,11 +10,10 @@ bspc config borderless_monocle    true
 bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 
-bspc config rule_command "xwinfo -cints 0x%X | xargs -d '\n' rulc -t"
-
-rulc -a 'class=="Gimp"' 'desktop=^8 follow=on floating=on'
-rulc -a 'class=="Chromium"' 'desktop=^2'
-rulc -a 'instance=="mpv"' 'floating=on'
-rulc -a 'class=="Screenkey"' 'manage=off'
+bspc rule -a Gimp desktop=^8 follow=on floating=on
+bspc rule -a Chromium desktop=^2
+bspc rule -a mplayer2 floating=on
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
 
 nitrogen --restore
