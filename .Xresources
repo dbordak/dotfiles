@@ -53,7 +53,7 @@ URxvt.allow_bold:		true
 !URxvt*boldItalicFont:	xft:envy code r:bold:italic:pixelsize=16
 
 !! Source Code Pro
-!URxvt*font: 			xft:source code pro for powerline:regular:pixelsize=18antialias=false
+!URxvt*font: 			xft:source code pro for powerline:regular:pixelsize=18:antialias=false
 !URxvt*imFont: 			xft:source code pro for powerline:regular:pixelsize=18:antialias=false
 !URxvt*boldFont: 		xft:source code pro for powerline:semibold:pixelsize=18:antialias=false
 !URxvt*italicFont: 		xft:source code pro for powerline:italic:pixelsize=18:antialias=false
